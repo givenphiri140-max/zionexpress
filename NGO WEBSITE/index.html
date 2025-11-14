@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Express</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="nav">
+                <nav>
+                    <div class="logo">Zion Express</div>
+                    <ul>
+                        <li class="Navmenu"><a href="index.html" class="active">Home</a></li>
+                        <li class="Navmenu"><a href="about.html">About</a></li>
+                        <li class="Navmenu"><a href="join.html">Join-Us</a></li>
+                        <li class="Navmenu"><a href="donate.html">Donate</a></li>
+                        <li class="Navmenu"><a href="contacts.html">Contact</a></li>
+                    </ul>
+                       <!-- SIDEBAR FOR MOBILE -->
+        <div class="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">×</div>
+            <ul class="showside">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join-Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+
+                    <div class="menu-icon" onclick="menu()">☰</div>
+                </nav>
+            </div>
+
+            <div class="hero">
+                <h1>Bringing Hope, One Heart at a Time</h1>
+                <p>Join Zion Express in transforming lives through compassion, education, and empowerment.</p>
+                <button class="donate-btn"><a href="donate.html">Donate Now</a></button>
+            </div>
+        </div>
+
+        <!-- OUR IMPACT SECTION -->
+        <section class="impact" id="impact">
+            <h2>Our Impact So Far</h2>
+            <p>Together, we’re changing lives and empowering communities every day.</p>
+
+            <div class="impact-cards">
+                <div class="impact-card">
+                    <img src="images/educa.webp" alt="Education">
+                    <h3><span class="counter" data-target="3200">0</span>+</h3>
+                    <p>Children Educated</p>
+                </div>
+
+                <div class="impact-card">
+                    <img src="images/health.webp" alt="Health">
+                    <h3><span class="counter" data-target="850">0</span>+</h3>
+                    <p>Families Supported</p>
+                </div>
+
+                <div class="impact-card">
+                    <img src="images/opha.webp" alt="Orphanages">
+                    <h3><span class="counter" data-target="10">0</span></h3>
+                    <p>Orphanages Built</p>
+                </div>
+
+                <div class="impact-card">
+                    <img src="images/water.webp" alt="Water Projects">
+                    <h3><span class="counter" data-target="100">0</span>+</h3>
+                    <p>Clean Water Projects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2025 Zion Express. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

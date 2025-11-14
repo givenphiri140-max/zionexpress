@@ -1,0 +1,265 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(images/back2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    background-color:rgba(216, 216, 216, 0.668);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0px 30px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: orange;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(rgba(14, 14, 14, 0.829), rgba(0,0,0,0.4)),
+                url('images/shutterstock_667950202-scaled.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: rgba(255, 250, 250, 0.842);
+
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.donate-btn {
+    background-color: orange;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    color: rgba(254, 254, 254, 0.99);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1.5em;
+}
+
+.donate-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.donate-btn:hover {
+    background-color: #e69500;
+}
+
+/* IMPACT SECTION */
+.impact {
+    background-color: rgba(216, 216, 216, 0.638);
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.impact h2 {
+    font-size: 2.2rem;
+    color: rgb(255, 250, 250);
+    margin-bottom: 10px;
+}
+
+.impact p {
+    color:  rgb(1, 63, 15);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.impact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.452);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(180, 159, 4, 0.234);
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(56, 234, 2, 0.293);
+}
+
+.impact-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 500px;
+    margin-bottom: 15px;
+}
+
+.impact-card h3 {
+    font-size: 2rem;
+    color: rgb(172, 113, 4);
+    margin-bottom: 5px;
+}
+
+.impact-card p {
+    font-weight: 600;
+    color: #333;
+}
+
+@media(max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .impact {
+        padding: 60px 15px;
+    }
+
+    .impact h2 {
+        font-size: 1.8rem;
+    }
+
+    .impact-card {
+        padding: 20px;
+    }
+}
+
+
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(216,216,216,0.95);
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: orange;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.showside{
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    color: orange;
+}
+
+/* Show menu icon on small screens */
+@media(max-width: 900px){
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: rgba(216, 216, 216, 0.979);
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.active{
+    color: orange;
+}

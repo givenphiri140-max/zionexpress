@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us – Zion Express</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Zion Express</div>
+        <ul>
+            <li class="Navmenu"><a href="index.html">Home</a></li>
+            <li class="Navmenu"><a href="about.html">About</a></li>
+            <li class="Navmenu"><a href="join.html" class="active">Join</a></li>
+            <li class="Navmenu"><a href="donate.html">Donate</a></li>
+            <li class="Navmenu"><a href="contacts.html">Contact</a></li>
+        </ul>
+
+                               <!-- SIDEBAR FOR MOBILE -->
+        <div class="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">×</div>
+            <ul class="showside">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html" class="active">Join-Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="menu-icon" onclick="menu()">☰</div>
+    </nav>
+
+    <!-- JOIN HERO -->
+    <section class="join-hero">
+        <h1>Become a Volunteer</h1>
+        <p>Join Zion Express and help transform lives through compassion, education, and empowerment.</p>
+    </section>
+
+    <!-- SIGN UP FORM -->
+    <section class="join-section">
+        <div class="form-container">
+            <h2>Sign Up Now</h2>
+            <p class="form-subtitle">Fill in your details to become part of our mission.</p>
+
+            <form action="#" method="post" class="join-form">
+
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="+260 700 000 000" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Age</label>
+                    <input type="number" placeholder="Enter your age" min="10" max="90" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Why do you want to join?</label>
+                    <textarea placeholder="Write your motivation..." required></textarea>
+                </div>
+
+                <button type="submit" class="join-btn">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Zion Express. All Rights Reserved.</p>
+    </footer>
+
+    <script src="join.js"></script>
+</body>
+</html>
